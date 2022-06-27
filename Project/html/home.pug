@@ -10,6 +10,8 @@ html(lang="en")
   body
     .page.home
       include includes/layout/sidebar
-      .content
-        h1 #{pageName}
+      .page-content
+        include includes/layout/header
+        .content
+          h1 #{pageName}
     include includes/scripts
