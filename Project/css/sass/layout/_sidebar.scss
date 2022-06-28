@@ -12,5 +12,72 @@
     &.no-sidebar {
       left: -250px;
     }
+    .logo {
+      font-weight: bold;
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+    .links {
+      li {
+        a {
+          color: #c5c5c5;
+          padding: 10px 20px;
+          display: block;
+          text-decoration: none;
+          transition: 0.3s;
+          &:hover {
+            color: #FFF;
+          }
+        }
+      }
+      > li {
+        > a {
+          position: relative;
+          color: #FFF;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid #FFF;
+          }
+          &:hover {
+            padding-left: 25px;
+          }
+        }
+      }
+      .sub-links {
+        display: none;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 3px;
+          top: 0;
+          width: 3px;
+          height: 100%;
+          background-color: #555;
+        }
+        a {
+          position: relative;
+          &:hover::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 3px;
+            width: 3px;
+            height: 100%;
+            background-color: #FFF;
+          }
+        }
+      }
+    }
   }
 }
