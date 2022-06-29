@@ -1,2 +1,51 @@
 .header
   i.fa-solid.fa-right-left.fa-lg.toggler
+  .dropdown.notifications-container
+    i#notifications.fa-solid.fa-bell.fa-lg.notify-icon(
+      data-bs-toggle='dropdown'
+      aria-expanded='false'
+      data-bs-display="static"
+    ) 
+    ul.dropdown-menu(aria-labelledby='notifications')
+      .notifiy-header
+        | Notifications
+        span  50
+      .notifiy-content
+          ul.list-unstyled
+            li
+              i.fa-solid.fa-envelope.fa-lg.mail
+              | Email From Adam
+            li
+              i.fa-solid.fa-thumbs-up.fa-lg.like
+              | Yahia Liked Your Post
+            li
+              i.fa-solid.fa-wallet.fa-lg.wallet
+              | Malek Transferred You Money
+            li
+              i.fa-solid.fa-comment.fa-lg.comment
+              | Mohammed Commented On Your Last Post
+            li
+              i.fa-solid.fa-heart.fa-lg.love
+              | Moaz Loved Your Post
+            li
+              i.fa-solid.fa-wallet.fa-lg.wallet
+              | Haroon Transferred You Money
+            li
+              i.fa-solid.fa-envelope.fa-lg.mail
+              | Email From Adam
+            li
+              i.fa-solid.fa-thumbs-up.fa-lg.like
+              | Yahia Liked Your Post
+            li
+              i.fa-solid.fa-wallet.fa-lg.wallet
+              | Malek Transferred You Money
+            li
+              i.fa-solid.fa-comment.fa-lg.comment
+              | Mohammed Commented On Your Last Post
+            li
+              i.fa-solid.fa-heart.fa-lg.love
+              | Moaz Loved Your Post
+            li
+              i.fa-solid.fa-wallet.fa-lg.wallet
+              | Haroon Transferred You Money
+      .notifiy-footer.text-center: a.text-decoration-none(href="#") View All Notifications
