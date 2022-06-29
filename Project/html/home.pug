@@ -10,6 +10,7 @@ html(lang="en")
       include includes/layout/sidebar
       .page-content
         include includes/layout/header
-        .content
-          h1 #{pageName}
+        .container-fluid
+          .content
+            include includes/components/page-head
     include includes/scripts
