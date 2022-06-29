@@ -1,6 +1,7 @@
+@use "../vars/colors" as *;
 %headerIcon {
   cursor: pointer;
-  color: #101423;
+  color: $mainTextColor;
   padding: 10px;
 }
 .header {
@@ -29,10 +30,10 @@
         left: 9px;
         border-style: solid;
         border-width: 10px;
-        border-color: transparent transparent #101423  transparent;
+        border-color: transparent transparent $mainTextColor  transparent;
       }
       .notifiy-header {
-        background-color: #101423;
+        background-color: $mainTextColor;
         padding: 15px;
         color: #FFF;
         border-radius: 0.25rem 0.25rem 0 0;
@@ -84,5 +85,77 @@
   }
   .maxmize {
     @extend %headerIcon;
+  }
+  .usermenu-container {
+    margin-left: auto;
+    .user-profile {
+      cursor: pointer;
+      margin-right: 20px;
+      .avatar {
+        width: 40px;
+        height: 40px;
+      }
+      .username {
+        font-weight: bold;
+        color: $mainTextColor;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+    .dropdown-menu {
+      min-width: 600px;
+      padding: 20px;
+      top:50px;
+      border: 1px solid $mainTextColor;
+      color: $mainTextColor;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: 16px;
+        border-style: solid;
+        border-width: 10px;
+        border-color: transparent transparent $mainTextColor  transparent;
+      }
+      .user-info {
+        h3 {
+          font-weight: bold;
+        }
+        p {
+          color: $altTextColor
+        }
+      }
+      .activites {
+        li {
+          padding: 10px;
+          span {
+
+          }
+        }
+      }
+      .profile-links {  
+        .link-box {
+          border: 1px solid $mainTextColor;
+          padding: 10px;
+          border-radius: 6px;
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          transition: 0.3s;
+          gap: 5px;
+          color: $mainTextColor;
+          .settings {
+            color: $blue;
+          }
+          .profile {
+            color: $green;
+          }
+          .logout {
+            color: #eb3434;
+          }
+        }
+      }
+    }
   }
 }

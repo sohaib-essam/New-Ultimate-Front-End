@@ -9,7 +9,7 @@ $(function () {
 
   //--------------------------------------------------------------------------------------
 
-  // Toggle Dropdown
+  // Toggle Sublinks In Sidebar
   $(".toggle-sub-links").on('click', function (e) {
       $(this).find(".icon").toggleClass("fa-caret-down fa-caret-right");
       $(this).next(".sub-links").slideToggle();

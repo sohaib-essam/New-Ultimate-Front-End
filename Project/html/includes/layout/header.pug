@@ -50,3 +50,39 @@
               | Haroon Transferred You Money
       .notifiy-footer.text-center: a.text-decoration-none(href="#") View All Notifications
   span.maxmize: i.fa-solid.fa-maximize.fa-lg
+  .dropdown.usermenu-container
+    .user-profile#usermenu(
+      data-bs-toggle='dropdown'
+      aria-expanded='false'
+      data-bs-display="static"
+      data-bs-auto-close="outside"
+    )
+      img.avatar.rounded-circle(src="imgs/pugjs.png" alt="avatar")
+      span.username Sohaib Essam
+      i.fa-solid.fa-caret-down.fa-lg
+    .dropdown-menu.dropdown-menu-end(aria-labelledby='usermenu')
+      .user-info
+        h3 Soahib Essam
+        p Premium Member
+      hr
+      ul.list-unstyled.activites
+        li Comment Add On Post #[span.activity "Bootstrap V5.1"]
+        li Posted A Post About #[span.activity "PHP 8"]
+        li Created Chart On #[span.activity "Charts Page"]
+        li Posted A Post About #[span.activity "ES6"]
+        li Posted A Post About #[span.activity "Laravel"]
+        li You Liked Post #[span.activity "node.js Course"]
+      hr
+      .row.profile-links
+        .col
+          a(href="#" style="display: block").link-box
+            i.fa-solid.fa-gear.fa-lg.fa-fw.settings
+            span Settings
+        .col
+          a(href="#" style="display: block").link-box
+            i.fa-solid.fa-user.fa-lg.fa-fw.profile
+            span Profile
+        .col
+          a(href="#" style="display: block").link-box
+            i.fa-solid.fa-arrow-right-from-bracket.fa-lg.fa-fw.logout
+            span Settings
