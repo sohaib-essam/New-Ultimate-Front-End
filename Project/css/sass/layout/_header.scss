@@ -1,7 +1,7 @@
 @use "../vars/colors" as *;
 %headerIcon {
   cursor: pointer;
-  color: $mainTextColor;
+  color: $darkColor;
   padding: 10px;
 }
 .header {
@@ -30,10 +30,10 @@
         left: 9px;
         border-style: solid;
         border-width: 10px;
-        border-color: transparent transparent $mainTextColor  transparent;
+        border-color: transparent transparent $darkColor  transparent;
       }
       .notifiy-header {
-        background-color: $mainTextColor;
+        background-color: $darkColor;
         padding: 15px;
         color: #FFF;
         border-radius: 0.25rem 0.25rem 0 0;
@@ -98,7 +98,7 @@
       }
       .username {
         font-weight: bold;
-        color: $mainTextColor;
+        color: $darkColor;
         margin-right: 10px;
         margin-left: 10px;
       }
@@ -107,8 +107,8 @@
       min-width: 600px;
       padding: 20px;
       top:50px;
-      border: 1px solid $mainTextColor;
-      color: $mainTextColor;
+      border: 1px solid $darkColor;
+      color: $darkColor;
       &::before {
         content: "";
         position: absolute;
@@ -116,27 +116,27 @@
         right: 16px;
         border-style: solid;
         border-width: 10px;
-        border-color: transparent transparent $mainTextColor  transparent;
+        border-color: transparent transparent $darkColor  transparent;
       }
       .user-info {
         h3 {
           font-weight: bold;
         }
         p {
-          color: $altTextColor
+          color: $textColor
         }
       }
       .activites {
         li {
           padding: 10px;
           span {
-
+            color: $blue;
           }
         }
       }
       .profile-links {  
         .link-box {
-          border: 1px solid $mainTextColor;
+          border: 1px solid $darkColor;
           padding: 10px;
           border-radius: 6px;
           display: flex !important;
@@ -145,7 +145,7 @@
           text-decoration: none;
           transition: 0.3s;
           gap: 5px;
-          color: $mainTextColor;
+          color: $darkColor;
           .settings {
             color: $blue;
           }

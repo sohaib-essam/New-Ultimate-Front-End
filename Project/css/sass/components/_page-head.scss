@@ -1,0 +1,14 @@
+@use "../vars/colors" as *;
+.content {
+  .page-head {
+    padding: 20px;
+    margin-top: 20px;
+    .page-title {
+      font-weight: bold;
+      color: $blue;
+    }
+    .page-desc {
+      color: $textColor;
+    }
+  }
+}

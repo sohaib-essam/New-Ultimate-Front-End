@@ -2,14 +2,17 @@
 
 $themes: (
   blue-theme:  $blue,
-  dark-theme:  $dark,
+  orange-theme:  $orange,
   green-theme:  $green,
   red-theme:  $red,
 );
 
 @each $theme, $color in $themes {
   .#{$theme} {
-    .classname {
+    .content .page-head .page-title {
+      color: $color;
+    }
+    .header .usermenu-container .dropdown-menu .activites li span {
       color: $color;
     }
   }

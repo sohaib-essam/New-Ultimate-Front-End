@@ -56,4 +56,15 @@ $(function () {
     $(this).parent().toggleClass("hide-settings")
   })
 
+  //--------------------------------------------------------------------------------------
+
+  // Switch Colors
+  let classesArray = []
+  $(".color-options li").each(function () {
+    classesArray.push($(this).data("color"));
+  });
+  $(".color-options li").on("click", function () {
+    $('body').removeClass(classesArray.join(" ")).addClass($(this).data('color'));
+    $(this).addClass("active").siblings().removeClass("active");
+  });
 });
