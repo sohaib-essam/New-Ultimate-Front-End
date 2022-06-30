@@ -1,6 +1,9 @@
 // Vars
 @use "sass/vars/colors" as *;
 
+// Options
+@use "sass/options/colors";
+
 // Layout
 @use "sass/layout/global-rules";
 @use "sass/layout/header";

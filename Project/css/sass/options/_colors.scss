@@ -1,0 +1,16 @@
+@use "../vars/colors" as *;
+
+$themes: (
+  blue-theme:  $blue,
+  dark-theme:  $dark,
+  green-theme:  $green,
+  red-theme:  $red,
+);
+
+@each $theme, $color in $themes {
+  .#{$theme} {
+    .classname {
+      color: $color;
+    }
+  }
+}
