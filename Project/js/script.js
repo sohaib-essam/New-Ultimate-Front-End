@@ -47,4 +47,13 @@ $(function () {
       document.msExitFullscreen();
     }
   }
+
+  //--------------------------------------------------------------------------------------
+
+  // Toggle Settings box
+  $(".toggle-settings").on("click", function () {
+    $(this).find(".icon").toggleClass("fa-spin")
+    $(this).parent().toggleClass("hide-settings")
+  })
+
 });

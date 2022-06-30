@@ -1,4 +1,10 @@
+// Vars
 @use "sass/vars/colors" as *;
+
+// Layout
 @use "sass/layout/global-rules";
 @use "sass/layout/header";
 @use "sass/layout/sidebar";
+
+// components
+@use "sass/components/settings-box";
