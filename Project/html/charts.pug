@@ -1,0 +1,17 @@
+- let pageName = "Charts"
+doctype html
+html(lang="en")
+  head
+    include includes/meta
+    title #{pageName}
+    include includes/styles
+  body
+    .page.home
+      include includes/components/settings-box
+      include includes/layout/sidebar
+      .page-content
+        include includes/layout/header
+        .container-fluid
+          .content
+            include includes/components/page-head
+    include includes/scripts

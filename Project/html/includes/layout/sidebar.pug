@@ -1,7 +1,7 @@
 .sidebar
   .logo.text-center Sohaib
   ul.links.list-unstyled
-    li: a(href="#") Home
+    li: a(href="home.html" class = pageName === "Home" ? "active" : "") Home
     li
       a.toggle-sub-links(href="#")
         | Forms
@@ -18,3 +18,4 @@
       ul.sub-links.list-unstyled
         li: a(href="#") Loading
         li: a(href="#") Breadcrumbs
+    li: a(href="charts.html" class = pageName === "Charts" ? "active" : "") Charts
