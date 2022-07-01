@@ -1,23 +1,21 @@
 @use "../vars/colors" as *;
-%headerIcon {
-  cursor: pointer;
-  color: $darkColor;
-  padding: 10px;
-}
 .header {
   background-color: #FFF;
   padding: 10px;
   display: flex;
   gap: 15px;
   align-items: center;
-  .toggler {
-    @extend %headerIcon;
+  .header-icon {
+    cursor: pointer;
+    color: $darkColor;
+    padding: 10px;
+    transition: 0.3s;
+    &:hover {
+      color: $blue;
+    }
   }
   .notifications-container {
     display: inline-block;
-    .notify-icon {
-      @extend %headerIcon;
-    }
     .dropdown-menu {
       min-width: 600px;
       border: none;
@@ -84,9 +82,6 @@
       }
     }
   }
-  .maxmize {
-    @extend %headerIcon;
-  }
   .usermenu-container {
     margin-left: auto;
     .user-profile {
@@ -121,6 +116,7 @@
       .user-info {
         h3 {
           font-weight: bold;
+          color: $blue;
         }
         p {
           color: $textColor
@@ -131,6 +127,7 @@
           padding: 10px;
           span {
             color: $blue;
+            font-weight: bold;
           }
         }
       }

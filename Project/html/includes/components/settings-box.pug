@@ -7,8 +7,12 @@
         h4.option-title Color Options
         - let themes = ["blue-theme", "red-theme", "orange-theme", "green-theme"];
         ul.list-unstyled
-          each theme in themes
-            li(data-color=theme)
+          - var firstLi = 1;
+          each theme, index in themes
+            if index == 0
+              li.active(data-color=theme)
+            else
+              li(data-color=theme)
       .option-box
         h4.option-title Font Options
       .option-box

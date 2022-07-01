@@ -15,5 +15,11 @@ $themes: (
     .header .usermenu-container .dropdown-menu .activites li span {
       color: $color;
     }
+    .header .header-icon:hover {
+      color: $color;
+    }
+    .header .usermenu-container .dropdown-menu .user-info h3 {
+      color: $color;
+    }
   }
 }
