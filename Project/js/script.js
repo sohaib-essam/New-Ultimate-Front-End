@@ -59,12 +59,24 @@ $(function () {
   //--------------------------------------------------------------------------------------
 
   // Switch Colors
-  let classesArray = []
+  let themesArray = [];
   $(".color-options li").each(function () {
-    classesArray.push($(this).data("color"));
+    themesArray.push($(this).data("color"));
   });
   $(".color-options li").on("click", function () {
-    $('body').removeClass(classesArray.join(" ")).addClass($(this).data('color'));
+    $('body').removeClass(themesArray.join(" ")).addClass($(this).data('color'));
     $(this).addClass("active").siblings().removeClass("active");
   });
+
+  //--------------------------------------------------------------------------------------
+
+  // Switch Fonts
+  let fontsArray = [];
+  $(".font-options select option").each(function () {
+    fontsArray.push($(this).val());
+  });
+  $(".font-options select").on("change", function () {
+    $('body').removeClass(fontsArray.join(" ")).addClass($(this).find("option:selected").val());
+  })
+
 });

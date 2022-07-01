@@ -13,7 +13,11 @@
               li.active(data-color=theme)
             else
               li(data-color=theme)
-      .option-box
+      .option-box.font-options
         h4.option-title Font Options
+        - let fonts = ["cairo", "roboto", "open-sans", "splash"];
+        select.form-control
+          each font in fonts
+            option(value=font)=font + " Font"
       .option-box
         h4.option-title Sidebar Options

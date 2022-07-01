@@ -1,5 +1,17 @@
 body {
   font-family: 'Cairo', sans-serif;
+  &.cairo {
+    font-family: 'Cairo', sans-serif;
+  }
+  &.roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+  &.open-sans {
+    font-family: 'Open Sans', sans-serif;
+  }
+  &.splash {
+    font-family: 'Splash', cursive;
+  }
 }
 
 .page {
